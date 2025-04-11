@@ -11,7 +11,7 @@ body {
   
   .todo-box {
     background-color: white;
-    padding: 30px;
+    padding: 50px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     width: 350px;
     text-align: center;

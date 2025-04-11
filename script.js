@@ -43,7 +43,7 @@ function updateCounter() {
   const completedCount = tasks.filter(task => task.completed).length;
   const totalCount = tasks.length;
   const counter = document.getElementById('taskCounter');
-  counter.textContent = `Total: ${totalCount}`;
+  counter.textContent = `Completed: ${totalCount}`;
 }
 function removeTask(id) {
   tasks = tasks.filter(task => task.id !== id);
