@@ -39,7 +39,12 @@ function loadTasks() {
   tasks = saved ? JSON.parse(saved) : [];
   renderTasks();
 }
-
+function updateCounter() {
+  const completedCount = tasks.filter(task => task.completed).length;
+  const totalCount = tasks.length;
+  const counter = document.getElementById('taskCounter');
+  counter.textContent = `Total: ${totalCount}`;
+}
 function removeTask(id) {
   tasks = tasks.filter(task => task.id !== id);
   saveTasks();
